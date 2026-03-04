@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+title: "Do Myers-Briggs Personality Dimensions Align with Neural Engagement Patterns During Formal Presentations?"
+message: "If you use this repository, please cite it as below."
+type: software
+authors:
+  - family-names: "Uche-Nwosu"
+    given-names: "Chioma Audrey"
+    affiliation: "Middlesex University"
+version: "0.1.0"
+repository-code: "https://github.com/itsjustchioma/mbti-neural-engagement-analysis"
+license: MIT
