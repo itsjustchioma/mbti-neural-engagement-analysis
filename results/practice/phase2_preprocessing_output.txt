@@ -1,0 +1,17 @@
+
+--- PHASE 2: EEG PREPROCESSING STARTED ---
+
+Dataset loaded.
+Original shape: (261476, 11)
+
+EEG rows isolated.
+EEG dataset shape: (167250, 11)
+
+Unused columns removed.
+Remaining columns: ['muse_timestamp', 'participant', 'delta', 'theta', 'alpha', 'beta']
+
+Clean EEG dataset saved to:
+data/processed/eeg_clean_practice.csv
+
+--- PHASE 2 COMPLETE ---
+
