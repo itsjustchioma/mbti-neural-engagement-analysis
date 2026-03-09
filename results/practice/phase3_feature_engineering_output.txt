@@ -1,0 +1,58 @@
+--- PHASE 3: FEATURE ENGINEERING STARTED ---
+
+Dataset loaded.
+Shape before cleaning: (167250, 6)
+
+--- DATA QUALITY REPORT ---
+Duplicate rows: 4007
+
+Missing values per EEG band:
+delta    0
+theta    0
+alpha    0
+beta     0
+dtype: int64
+
+Rows where all EEG bands are zero: 9440
+
+Basic beta statistics:
+count    167250.000000
+mean        820.321950
+std         368.977218
+min           0.000000
+25%         781.685000
+50%         805.054930
+75%         832.857100
+max        1650.000000
+Name: beta, dtype: float64
+
+Duplicates removed.
+Shape after duplicate removal: (163243, 6)
+
+Rows with missing EEG values removed.
+Shape after NaN removal: (163243, 6)
+
+Rows removed due to signal dropout: 7226
+Shape after cleaning: (156017, 6)
+
+--- BETA VALUE CHECK ---
+Minimum beta value: 0.0
+Maximum beta value: 1650.0
+
+Five smallest beta values:
+20    0.0
+39    0.0
+40    0.0
+44    0.0
+45    0.0
+Name: beta, dtype: float64
+
+Participant feature dataset created.
+Number of participants: 4
+Feature columns: ['participant', 'mean_delta', 'mean_theta', 'mean_alpha', 'mean_beta', 'std_alpha', 'std_beta', 'max_beta', 'beta_alpha_ratio', 'theta_beta_ratio', 'alpha_beta_ratio', 'range_beta']
+
+Feature dataset saved to:
+data/processed/eeg_features_practice.csv
+
+--- PHASE 3 COMPLETE ---
+
