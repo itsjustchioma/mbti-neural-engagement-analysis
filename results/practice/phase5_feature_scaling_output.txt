@@ -1,0 +1,26 @@
+
+--- PHASE 5: FEATURE SCALING STARTED ---
+
+Dataset loaded.
+Dataset shape: (4, 14)
+
+Neural features selected for scaling:
+['mean_delta', 'mean_theta', 'mean_alpha', 'mean_beta', 'std_alpha', 'std_beta', 'beta_alpha_ratio', 'theta_beta_ratio', 'alpha_beta_ratio', 'max_beta', 'range_beta']
+
+Number of neural features: 11
+
+Scaling complete.
+Preview of scaled dataset:
+  participant  mean_delta  mean_theta  ...  range_beta  MBTI              EI
+0         A14      -0.684      -0.735  ...      -0.083  ESFP             NaN
+1         B14      -0.711      -0.786  ...      -1.604  INFJ  self-awareness
+2         C13      -0.315      -0.157  ...       0.843  ESFP         empathy
+3         D13       1.711       1.678  ...       0.843  ESFJ             NaN
+
+[4 rows x 14 columns]
+
+Scaled dataset saved to:
+data/processed/eeg_scaled_features_practice.csv
+
+--- PHASE 5 COMPLETE ---
+

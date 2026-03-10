@@ -1,3 +1,8 @@
+"""
+Phase 2: EEG preprocessing
+Isolate EEG rows from the OSC dataset and create a clean EEG bandpower dataset.
+"""
+
 import pandas as pd
 
 print("\n--- PHASE 2: EEG PREPROCESSING STARTED ---\n")

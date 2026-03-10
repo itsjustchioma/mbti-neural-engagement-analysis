@@ -1,8 +1,13 @@
+"""
+Phase 1: Dataset audit
+Load the OSC dataset and inspect its structure, participants, sensors, and EEG band columns.
+"""
+
 import pandas as pd
 
 # 1. Load dataset
-file_path = "dataset/practice/test_dataset.xlsx"
-df = pd.read_excel(file_path)
+FILE_PATH = "dataset/practice/test_dataset.xlsx"
+df = pd.read_excel(FILE_PATH)
 
 print("\n--- DATASET LOADED SUCCESSFULLY ---\n")
 

@@ -1,3 +1,8 @@
+"""
+Phase 4: Personality data integration
+Merge EEG features with MBTI and emotional intelligence data for each participant.
+"""
+
 import pandas as pd
 
 print("\n--- PHASE 4: MERGING PERSONALITY DATA ---\n")

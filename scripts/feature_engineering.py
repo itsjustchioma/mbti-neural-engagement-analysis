@@ -1,3 +1,8 @@
+"""
+Phase 3: Feature engineering.
+Aggregate EEG signals into participant-level neural features and remove invalid rows.
+"""
+
 import pandas as pd
 
 print("\n--- PHASE 3: FEATURE ENGINEERING STARTED ---\n")
