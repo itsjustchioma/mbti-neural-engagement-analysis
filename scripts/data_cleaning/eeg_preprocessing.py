@@ -30,7 +30,7 @@ print("\nUnused columns removed.")
 print("Remaining columns:", eeg_df.columns.tolist())
 
 # 4. Save clean dataset
-OUTPUT_PATH = "data/processed/eeg_clean_practice.csv"
+OUTPUT_PATH = "data/processed/eeg_clean.csv"
 eeg_df.to_csv(OUTPUT_PATH, index=False)
 
 print("\nClean EEG dataset saved to:")
