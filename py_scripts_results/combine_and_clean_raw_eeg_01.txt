@@ -1,0 +1,18 @@
+Found 10 participant files.
+All files combined.
+Shape: (19852, 20)
+
+Removed NaN values.
+Shape: (19851, 6)
+
+Removed 0 zero-signal rows.
+Final shape: (19851, 6)
+
+Clean dataset saved to:
+processed_data/eeg_combined_clean_01.csv
+
+Number of participants: 38
+Time range: 0 to 771
+
+--- PHASE 1 COMPLETE ---
+
