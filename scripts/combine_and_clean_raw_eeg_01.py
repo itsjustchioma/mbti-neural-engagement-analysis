@@ -83,7 +83,7 @@ print("Final shape:", df.shape)
 df = df.sort_values(by=["participant", "time_seconds"])
 
 # 9. Save clean dataset
-OUTPUT_PATH = "processed_data/eeg_combined_clean_01.csv"
+OUTPUT_PATH = "processed_data/final/eeg_combined_clean_01.csv"
 
 df.to_csv(OUTPUT_PATH, index=False)
 
