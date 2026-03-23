@@ -9,7 +9,7 @@ Removed 0 zero-signal rows.
 Final shape: (19851, 6)
 
 Clean dataset saved to:
-processed_data/eeg_combined_clean_01.csv
+processed_data/final/eeg_combined_clean_01.csv
 
 Number of participants: 38
 Time range: 0 to 771

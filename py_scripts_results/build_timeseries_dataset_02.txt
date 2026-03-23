@@ -1,18 +1,21 @@
-Found 10 participant files.
-All files combined.
-Shape: (19852, 20)
-
-Removed NaN values.
+EEG dataset loaded.
 Shape: (19851, 6)
 
-Removed 0 zero-signal rows.
-Final shape: (19851, 6)
+MBTI dataset loaded.
+Shape: (24, 4)
 
-Clean dataset saved to:
-processed_data/final/eeg_combined_clean_01.csv
+Datasets merged.
+Shape: (19851, 7)
 
-Number of participants: 38
-Time range: 0 to 771
+Behavioural metrics created.
+MBTI dimensions created.
+EI column added (empty placeholder).
 
---- PHASE 1 COMPLETE ---
+Final dataset saved to:
+processed_data/final/eeg_timeseries_full_02.csv
+
+Missing MBTI values: 8648
+Unique participants: 38
+
+--- PHASE 2 COMPLETE ---
 
