@@ -1,0 +1,17 @@
+Dataset loaded.
+Shape: (20509, 14)
+
+Divergence created.
+Presentation phases created.
+
+Clustering dataset saved to:
+processed_data/final/eeg_clustering_dataset_05.csv
+
+Final shape (should be ~number of participants): (42, 17)
+Unique participants: 42
+
+Columns:
+['participant', 'early_engagement', 'mid_engagement', 'late_engagement', 'mean_engagement', 'mean_workload', 'mean_divergence', 'alpha', 'beta', 'theta', 'engagement_volatility', 'MBTI', 'IE', 'SN', 'TF', 'JP', 'EI']
+
+--- PHASE 5 COMPLETE ---
+
