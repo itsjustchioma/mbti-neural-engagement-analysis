@@ -4,6 +4,8 @@ Shape: (20509, 14)
 Divergence created.
 Presentation phases created.
 
+Missing values handled.
+
 Clustering dataset saved to:
 processed_data/final/eeg_clustering_dataset_05.csv
 
@@ -15,3 +17,23 @@ Columns:
 
 --- PHASE 5 COMPLETE ---
 
+
+Remaining missing values:
+participant               0
+early_engagement          0
+mid_engagement            0
+late_engagement           0
+mean_engagement           0
+mean_workload             0
+mean_divergence           0
+alpha                     0
+beta                      0
+theta                     0
+engagement_volatility     0
+MBTI                     16
+IE                       16
+SN                       16
+TF                       16
+JP                       16
+EI                       23
+dtype: int64

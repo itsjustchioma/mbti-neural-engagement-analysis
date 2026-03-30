@@ -72,6 +72,17 @@ df_final = pd.concat(
     axis=1
 ).reset_index()
 
+# 7. Combine everything
+df_final = pd.concat(
+    [phase_engagement, participant_metrics, volatility],
+    axis=1
+).reset_index()
+
+# 🔥 FIX MISSING VALUES HERE
+df_final = df_final.fillna(df_final.mean(numeric_only=True))
+
+print("\nMissing values handled.")
+
 # 8. Add MBTI + EI back (for interpretation later)
 meta = df.groupby("participant")[["MBTI", "IE", "SN", "TF", "JP", "EI"]].first().reset_index()
 
@@ -96,3 +107,5 @@ print("\nColumns:")
 print(df_final.columns.tolist())
 
 print("\n--- PHASE 5 COMPLETE ---\n")
+print("\nRemaining missing values:")
+print(df_final.isna().sum())
