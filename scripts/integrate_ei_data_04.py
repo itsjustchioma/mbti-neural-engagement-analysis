@@ -116,19 +116,3 @@ print("Participants missing ONLY EI:", len(missing_ei_only))
 print("\nUnique EI categories:", df["EI"].dropna().unique())
 
 print("\n--- PHASE 4 COMPLETE ---\n")
-
-# for claude
-# # 6. WORK DONE – RESULTS
-# You need to include a work done chapter which can vary according to the selected project:
-# 6.1 Design, interface, code… (project A)
-# 6.2 Interface design, screen flows…(project B)
-# 6.3 Diagrams, dashboards…. (project C)
-# 6.4 Comparative analysis of solutions found in literature searches (project D)
-
-# 7. FINDINGS
-# You need to include a findings chapter which can vary according to the selected project:
-# 7.1 Testing & user evaluation (project A)
-# 7.2 Testing & user evaluation (project B)
-# 7.3 Overview of patterns observed (project C)
-# 7.4 Functionality comparison tables and visualisations of prominent features and/or visualisation of literature review analysis(project D)
-
