@@ -1,14 +1,14 @@
 import pandas as pd
 
 # 1. Load main dataset
-main_path = "processed_data/final/eeg_clustering_dataset_05.csv"
-df_main = pd.read_csv(main_path)
+MAIN_PATH = "processed_data/final/eeg_clustering_dataset_05.csv"
+df_main = pd.read_csv(MAIN_PATH)
 
 print("Main dataset loaded:", df_main.shape)
 
 # 2. Load cluster output
-cluster_path = "processed_data/final/csv_result-clusters_output_001.csv"
-df_clusters = pd.read_csv(cluster_path)
+CLUSTER_PATH = "processed_data/final/csv_result-clusters_output_001.csv"
+df_clusters = pd.read_csv(CLUSTER_PATH)
 
 print("Cluster dataset loaded:", df_clusters.shape)
 
@@ -25,11 +25,11 @@ df_main["cluster"] = df_clusters[cluster_col]
 print("\nCluster column added.")
 
 # 5. Save final dataset
-output_path = "processed_data/final/eeg_clustering_with_labels_06.csv"
-df_main.to_csv(output_path, index=False)
+OUTPUT_PATH = "processed_data/final/eeg_clustering_with_labels_06.csv"
+df_main.to_csv(OUTPUT_PATH, index=False)
 
 print("\nFinal dataset saved to:")
-print(output_path)
+print(OUTPUT_PATH)
 
 # 6. Quick check
 print("\nCluster counts:")

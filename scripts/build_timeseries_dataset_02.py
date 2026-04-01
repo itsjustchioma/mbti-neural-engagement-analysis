@@ -1,6 +1,5 @@
 """
 Phase 2: Build time-series dataset with MBTI (EI placeholder)
-
 - Loads cleaned EEG dataset
 - Merges MBTI data using STUDENT_ID
 - Creates behavioural metrics

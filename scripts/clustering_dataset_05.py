@@ -84,7 +84,11 @@ df_final = df_final.fillna(df_final.mean(numeric_only=True))
 print("\nMissing values handled.")
 
 # 8. Add MBTI + EI back (for interpretation later)
-meta = df.groupby("participant")[["MBTI", "IE", "SN", "TF", "JP", "EI"]].first().reset_index()
+meta = (
+    df.groupby("participant")[["MBTI", "IE", "SN", "TF", "JP", "EI"]]
+    .first()
+    .reset_index()
+)
 
 df_final = df_final.merge(meta, on="participant", how="left")
 
@@ -107,5 +111,3 @@ print("\nColumns:")
 print(df_final.columns.tolist())
 
 print("\n--- PHASE 5 COMPLETE ---\n")
-print("\nRemaining missing values:")
-print(df_final.isna().sum())

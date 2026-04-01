@@ -1,6 +1,5 @@
 """
 Phase 1: Combine and clean raw EEG datasets
-
 - Loads all raw participant CSV files
 - Uses 'user' column as participant ID
 - Filters only EEG sensor data
