@@ -1,0 +1,1137 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.1003.1601                               -->
+<workbook original-version='18.1' source-build='2025.2.4 (20252.25.1003.1601)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='eeg_clustering_with_labels_06' inline='true' name='federated.0cuwa1u0rdqeo011a6jxs1ums48v' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='eeg_clustering_with_labels_06' name='textscan.1forxh80lwc93k1anvae60n0i88i'>
+            <connection class='textscan' directory='/Users/itsjustchioma/Desktop/School/IT Deployment/code/mbti-neural-engagement-analysis/processed_data/final' filename='eeg_clustering_with_labels_06.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1forxh80lwc93k1anvae60n0i88i' name='eeg_clustering_with_labels_06.csv' table='[eeg_clustering_with_labels_06#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en' separator=','>
+            <column datatype='string' name='participant' ordinal='0' />
+            <column datatype='real' name='early_engagement' ordinal='1' />
+            <column datatype='real' name='mid_engagement' ordinal='2' />
+            <column datatype='real' name='late_engagement' ordinal='3' />
+            <column datatype='real' name='mean_engagement' ordinal='4' />
+            <column datatype='real' name='mean_workload' ordinal='5' />
+            <column datatype='real' name='mean_divergence' ordinal='6' />
+            <column datatype='real' name='alpha' ordinal='7' />
+            <column datatype='real' name='beta' ordinal='8' />
+            <column datatype='real' name='theta' ordinal='9' />
+            <column datatype='real' name='engagement_volatility' ordinal='10' />
+            <column datatype='string' name='MBTI' ordinal='11' />
+            <column datatype='string' name='IE' ordinal='12' />
+            <column datatype='string' name='SN' ordinal='13' />
+            <column datatype='boolean' name='TF' ordinal='14' />
+            <column datatype='string' name='JP' ordinal='15' />
+            <column datatype='string' name='EI' ordinal='16' />
+            <column datatype='string' name='cluster' ordinal='17' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[eeg_clustering_with_labels_06.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;¤&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>participant</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[participant]</local-name>
+            <parent-name>[eeg_clustering_with_labels_06.csv]</parent-name>
+            <remote-alias>participant</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[eeg_clustering_with_labels_06.csv_B7AF7EB16FA641D0AC19730730BB5011]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>early_engagement</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[early_engagement]</local-name>
+            <parent-name>[eeg_clustering_with_labels_06.csv]</parent-name>
+            <remote-alias>early_engagement</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[eeg_clustering_with_labels_06.csv_B7AF7EB16FA641D0AC19730730BB5011]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mid_engagement</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[mid_engagement]</local-name>
+            <parent-name>[eeg_clustering_with_labels_06.csv]</parent-name>
+            <remote-alias>mid_engagement</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[eeg_clustering_with_labels_06.csv_B7AF7EB16FA641D0AC19730730BB5011]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>late_engagement</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[late_engagement]</local-name>
+            <parent-name>[eeg_clustering_with_labels_06.csv]</parent-name>
+            <remote-alias>late_engagement</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[eeg_clustering_with_labels_06.csv_B7AF7EB16FA641D0AC19730730BB5011]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mean_engagement</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[mean_engagement]</local-name>
+            <parent-name>[eeg_clustering_with_labels_06.csv]</parent-name>
+            <remote-alias>mean_engagement</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[eeg_clustering_with_labels_06.csv_B7AF7EB16FA641D0AC19730730BB5011]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mean_workload</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[mean_workload]</local-name>
+            <parent-name>[eeg_clustering_with_labels_06.csv]</parent-name>
+            <remote-alias>mean_workload</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[eeg_clustering_with_labels_06.csv_B7AF7EB16FA641D0AC19730730BB5011]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mean_divergence</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[mean_divergence]</local-name>
+            <parent-name>[eeg_clustering_with_labels_06.csv]</parent-name>
+            <remote-alias>mean_divergence</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[eeg_clustering_with_labels_06.csv_B7AF7EB16FA641D0AC19730730BB5011]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>alpha</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[alpha]</local-name>
+            <parent-name>[eeg_clustering_with_labels_06.csv]</parent-name>
+            <remote-alias>alpha</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[eeg_clustering_with_labels_06.csv_B7AF7EB16FA641D0AC19730730BB5011]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>beta</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[beta]</local-name>
+            <parent-name>[eeg_clustering_with_labels_06.csv]</parent-name>
+            <remote-alias>beta</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[eeg_clustering_with_labels_06.csv_B7AF7EB16FA641D0AC19730730BB5011]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>theta</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[theta]</local-name>
+            <parent-name>[eeg_clustering_with_labels_06.csv]</parent-name>
+            <remote-alias>theta</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[eeg_clustering_with_labels_06.csv_B7AF7EB16FA641D0AC19730730BB5011]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>engagement_volatility</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[engagement_volatility]</local-name>
+            <parent-name>[eeg_clustering_with_labels_06.csv]</parent-name>
+            <remote-alias>engagement_volatility</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[eeg_clustering_with_labels_06.csv_B7AF7EB16FA641D0AC19730730BB5011]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MBTI</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MBTI]</local-name>
+            <parent-name>[eeg_clustering_with_labels_06.csv]</parent-name>
+            <remote-alias>MBTI</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[eeg_clustering_with_labels_06.csv_B7AF7EB16FA641D0AC19730730BB5011]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[IE]</local-name>
+            <parent-name>[eeg_clustering_with_labels_06.csv]</parent-name>
+            <remote-alias>IE</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[eeg_clustering_with_labels_06.csv_B7AF7EB16FA641D0AC19730730BB5011]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SN</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SN]</local-name>
+            <parent-name>[eeg_clustering_with_labels_06.csv]</parent-name>
+            <remote-alias>SN</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[eeg_clustering_with_labels_06.csv_B7AF7EB16FA641D0AC19730730BB5011]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TF</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[TF]</local-name>
+            <parent-name>[eeg_clustering_with_labels_06.csv]</parent-name>
+            <remote-alias>TF</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[eeg_clustering_with_labels_06.csv_B7AF7EB16FA641D0AC19730730BB5011]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>JP</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[JP]</local-name>
+            <parent-name>[eeg_clustering_with_labels_06.csv]</parent-name>
+            <remote-alias>JP</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[eeg_clustering_with_labels_06.csv_B7AF7EB16FA641D0AC19730730BB5011]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EI</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EI]</local-name>
+            <parent-name>[eeg_clustering_with_labels_06.csv]</parent-name>
+            <remote-alias>EI</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[eeg_clustering_with_labels_06.csv_B7AF7EB16FA641D0AC19730730BB5011]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cluster</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[cluster]</local-name>
+            <parent-name>[eeg_clustering_with_labels_06.csv]</parent-name>
+            <remote-alias>cluster</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[eeg_clustering_with_labels_06.csv_B7AF7EB16FA641D0AC19730730BB5011]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Count' datatype='integer' name='[Calculation_1374301628299411456]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Mbti' datatype='string' name='[MBTI]' role='dimension' type='nominal' />
+      <column datatype='boolean' name='[TF]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='false' value='F' />
+          <alias key='true' value='T' />
+        </aliases>
+      </column>
+      <column caption='eeg_clustering_with_labels_06.csv' datatype='table' name='[__tableau_internal_object_id__].[eeg_clustering_with_labels_06.csv_B7AF7EB16FA641D0AC19730730BB5011]' role='measure' type='quantitative' />
+      <column caption='Alpha' datatype='real' name='[alpha]' role='measure' type='quantitative' />
+      <column caption='Beta' datatype='real' name='[beta]' role='measure' type='quantitative' />
+      <column caption='Cluster' datatype='string' name='[cluster]' role='dimension' type='nominal' />
+      <column caption='Early Engagement' datatype='real' name='[early_engagement]' role='measure' type='quantitative' />
+      <column caption='Engagement Volatility' datatype='real' name='[engagement_volatility]' role='measure' type='quantitative' />
+      <column caption='Late Engagement' datatype='real' name='[late_engagement]' role='measure' type='quantitative' />
+      <column caption='Mean Divergence' datatype='real' name='[mean_divergence]' role='measure' type='quantitative' />
+      <column caption='Mean Engagement' datatype='real' name='[mean_engagement]' role='measure' type='quantitative' />
+      <column caption='Mean Workload' datatype='real' name='[mean_workload]' role='measure' type='quantitative' />
+      <column caption='Mid Engagement' datatype='real' name='[mid_engagement]' role='measure' type='quantitative' />
+      <column caption='Participant' datatype='string' name='[participant]' role='dimension' type='nominal' />
+      <column caption='Theta' datatype='real' name='[theta]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/y4/1mfv0cp544nd63_dr47jl_vc0000gn/T/tableau-temp/#TableauTemp_06ptwn213kvw751ez6oen1qqe9ov.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='03/31/2026 12:04:04 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>participant</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[participant]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>participant</remote-alias>
+              <ordinal>0</ordinal>
+              <family>eeg_clustering_with_labels_06.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>42</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[eeg_clustering_with_labels_06.csv_B7AF7EB16FA641D0AC19730730BB5011]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>early_engagement</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[early_engagement]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>early_engagement</remote-alias>
+              <ordinal>1</ordinal>
+              <family>eeg_clustering_with_labels_06.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>39</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[eeg_clustering_with_labels_06.csv_B7AF7EB16FA641D0AC19730730BB5011]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>mid_engagement</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[mid_engagement]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>mid_engagement</remote-alias>
+              <ordinal>2</ordinal>
+              <family>eeg_clustering_with_labels_06.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>38</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[eeg_clustering_with_labels_06.csv_B7AF7EB16FA641D0AC19730730BB5011]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>late_engagement</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[late_engagement]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>late_engagement</remote-alias>
+              <ordinal>3</ordinal>
+              <family>eeg_clustering_with_labels_06.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[eeg_clustering_with_labels_06.csv_B7AF7EB16FA641D0AC19730730BB5011]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>mean_engagement</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[mean_engagement]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>mean_engagement</remote-alias>
+              <ordinal>4</ordinal>
+              <family>eeg_clustering_with_labels_06.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>41</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[eeg_clustering_with_labels_06.csv_B7AF7EB16FA641D0AC19730730BB5011]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>mean_workload</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[mean_workload]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>mean_workload</remote-alias>
+              <ordinal>5</ordinal>
+              <family>eeg_clustering_with_labels_06.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>39</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[eeg_clustering_with_labels_06.csv_B7AF7EB16FA641D0AC19730730BB5011]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>mean_divergence</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[mean_divergence]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>mean_divergence</remote-alias>
+              <ordinal>6</ordinal>
+              <family>eeg_clustering_with_labels_06.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>41</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[eeg_clustering_with_labels_06.csv_B7AF7EB16FA641D0AC19730730BB5011]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>alpha</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[alpha]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>alpha</remote-alias>
+              <ordinal>7</ordinal>
+              <family>eeg_clustering_with_labels_06.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>42</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[eeg_clustering_with_labels_06.csv_B7AF7EB16FA641D0AC19730730BB5011]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>beta</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[beta]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>beta</remote-alias>
+              <ordinal>8</ordinal>
+              <family>eeg_clustering_with_labels_06.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>42</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[eeg_clustering_with_labels_06.csv_B7AF7EB16FA641D0AC19730730BB5011]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>theta</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[theta]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>theta</remote-alias>
+              <ordinal>9</ordinal>
+              <family>eeg_clustering_with_labels_06.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>42</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[eeg_clustering_with_labels_06.csv_B7AF7EB16FA641D0AC19730730BB5011]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>engagement_volatility</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[engagement_volatility]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>engagement_volatility</remote-alias>
+              <ordinal>10</ordinal>
+              <family>eeg_clustering_with_labels_06.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>42</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[eeg_clustering_with_labels_06.csv_B7AF7EB16FA641D0AC19730730BB5011]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MBTI</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[MBTI]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MBTI</remote-alias>
+              <ordinal>11</ordinal>
+              <family>eeg_clustering_with_labels_06.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[eeg_clustering_with_labels_06.csv_B7AF7EB16FA641D0AC19730730BB5011]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>IE</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[IE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>IE</remote-alias>
+              <ordinal>12</ordinal>
+              <family>eeg_clustering_with_labels_06.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[eeg_clustering_with_labels_06.csv_B7AF7EB16FA641D0AC19730730BB5011]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SN</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[SN]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SN</remote-alias>
+              <ordinal>13</ordinal>
+              <family>eeg_clustering_with_labels_06.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[eeg_clustering_with_labels_06.csv_B7AF7EB16FA641D0AC19730730BB5011]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TF</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[TF]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TF</remote-alias>
+              <ordinal>14</ordinal>
+              <family>eeg_clustering_with_labels_06.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[eeg_clustering_with_labels_06.csv_B7AF7EB16FA641D0AC19730730BB5011]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>JP</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[JP]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>JP</remote-alias>
+              <ordinal>15</ordinal>
+              <family>eeg_clustering_with_labels_06.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[eeg_clustering_with_labels_06.csv_B7AF7EB16FA641D0AC19730730BB5011]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>EI</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[EI]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>EI</remote-alias>
+              <ordinal>16</ordinal>
+              <family>eeg_clustering_with_labels_06.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[eeg_clustering_with_labels_06.csv_B7AF7EB16FA641D0AC19730730BB5011]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cluster</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[cluster]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>cluster</remote-alias>
+              <ordinal>17</ordinal>
+              <family>eeg_clustering_with_labels_06.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[eeg_clustering_with_labels_06.csv_B7AF7EB16FA641D0AC19730730BB5011]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='eeg_clustering_with_labels_06.csv' id='eeg_clustering_with_labels_06.csv_B7AF7EB16FA641D0AC19730730BB5011'>
+            <properties context=''>
+              <relation connection='textscan.1forxh80lwc93k1anvae60n0i88i' name='eeg_clustering_with_labels_06.csv' table='[eeg_clustering_with_labels_06#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en' separator=','>
+                  <column datatype='string' name='participant' ordinal='0' />
+                  <column datatype='real' name='early_engagement' ordinal='1' />
+                  <column datatype='real' name='mid_engagement' ordinal='2' />
+                  <column datatype='real' name='late_engagement' ordinal='3' />
+                  <column datatype='real' name='mean_engagement' ordinal='4' />
+                  <column datatype='real' name='mean_workload' ordinal='5' />
+                  <column datatype='real' name='mean_divergence' ordinal='6' />
+                  <column datatype='real' name='alpha' ordinal='7' />
+                  <column datatype='real' name='beta' ordinal='8' />
+                  <column datatype='real' name='theta' ordinal='9' />
+                  <column datatype='real' name='engagement_volatility' ordinal='10' />
+                  <column datatype='string' name='MBTI' ordinal='11' />
+                  <column datatype='string' name='IE' ordinal='12' />
+                  <column datatype='string' name='SN' ordinal='13' />
+                  <column datatype='boolean' name='TF' ordinal='14' />
+                  <column datatype='string' name='JP' ordinal='15' />
+                  <column datatype='string' name='EI' ordinal='16' />
+                  <column datatype='string' name='cluster' ordinal='17' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Cluster Distribution by Emotional Intelligence Category</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#0e0e0e' fontname='.AppleSystemUIFont' fontsize='12'>Clusters show no strong alignment with emotional intelligence categories.</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>Æ </run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#666666' fontname='Benton Sans Book' fontsize='10' italic='true'>(A large proportion of participants had missing EI/MBTI data, which may limit interpretation.)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='eeg_clustering_with_labels_06' name='federated.0cuwa1u0rdqeo011a6jxs1ums48v' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0cuwa1u0rdqeo011a6jxs1ums48v'>
+            <column caption='Count' datatype='integer' name='[Calculation_1374301628299411456]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column datatype='string' name='[EI]' role='dimension' type='nominal' />
+            <column caption='Cluster' datatype='string' name='[cluster]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1374301628299411456]' derivation='Count' name='[cnt:Calculation_1374301628299411456:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[EI]' derivation='None' name='[none:EI:nk]' pivot='key' type='nominal' />
+            <column-instance column='[cluster]' derivation='None' name='[none:cluster:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0cuwa1u0rdqeo011a6jxs1ums48v].[none:EI:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:EI:nk]' member='&quot;empathy&quot;' />
+              <groupfilter function='member' level='[none:EI:nk]' member='&quot;managing emotions&quot;' />
+              <groupfilter function='member' level='[none:EI:nk]' member='&quot;motivating oneself&quot;' />
+              <groupfilter function='member' level='[none:EI:nk]' member='&quot;self awareness&quot;' />
+              <groupfilter function='member' level='[none:EI:nk]' member='&quot;social skill&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0cuwa1u0rdqeo011a6jxs1ums48v].[none:EI:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0cuwa1u0rdqeo011a6jxs1ums48v].[cnt:Calculation_1374301628299411456:qk]' palette='gray_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0cuwa1u0rdqeo011a6jxs1ums48v].[cnt:Calculation_1374301628299411456:qk]' value='Count'>
+              <formatted-text>
+                <run>Count</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.0cuwa1u0rdqeo011a6jxs1ums48v].[cnt:Calculation_1374301628299411456:qk]' />
+              <text column='[federated.0cuwa1u0rdqeo011a6jxs1ums48v].[cnt:Calculation_1374301628299411456:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0cuwa1u0rdqeo011a6jxs1ums48v].[none:cluster:nk]</rows>
+        <cols>[federated.0cuwa1u0rdqeo011a6jxs1ums48v].[none:EI:nk]</cols>
+      </table>
+      <simple-id uuid='{64DB8CB7-1888-4D8A-8D2F-1551D65BC151}' />
+    </worksheet>
+    <worksheet name='Sheet 2 (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Cluster Distribution by MBTI Type</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#0e0e0e' fontname='.AppleSystemUIFont' fontsize='12'>Most participants fall into a single cluster, indicating weak alignment between neural patterns and MBTI types.</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>Æ  </run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#666666' fontname='Benton Sans Book' fontsize='10' italic='true'>(A large proportion of participants had missing EI/MBTI data, which may limit interpretation.)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='eeg_clustering_with_labels_06' name='federated.0cuwa1u0rdqeo011a6jxs1ums48v' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0cuwa1u0rdqeo011a6jxs1ums48v'>
+            <column caption='Count' datatype='integer' name='[Calculation_1374301628299411456]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='Mbti' datatype='string' name='[MBTI]' role='dimension' type='nominal' />
+            <column caption='Cluster' datatype='string' name='[cluster]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1374301628299411456]' derivation='Count' name='[cnt:Calculation_1374301628299411456:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[MBTI]' derivation='None' name='[none:MBTI:nk]' pivot='key' type='nominal' />
+            <column-instance column='[cluster]' derivation='None' name='[none:cluster:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0cuwa1u0rdqeo011a6jxs1ums48v].[none:MBTI:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:MBTI:nk]' member='&quot;ENFJ&quot;' />
+              <groupfilter function='member' level='[none:MBTI:nk]' member='&quot;ENFP&quot;' />
+              <groupfilter function='member' level='[none:MBTI:nk]' member='&quot;ENTJ&quot;' />
+              <groupfilter function='member' level='[none:MBTI:nk]' member='&quot;ESFJ&quot;' />
+              <groupfilter function='member' level='[none:MBTI:nk]' member='&quot;ESFP&quot;' />
+              <groupfilter function='member' level='[none:MBTI:nk]' member='&quot;ESTJ&quot;' />
+              <groupfilter function='member' level='[none:MBTI:nk]' member='&quot;INFJ&quot;' />
+              <groupfilter function='member' level='[none:MBTI:nk]' member='&quot;INFP&quot;' />
+              <groupfilter function='member' level='[none:MBTI:nk]' member='&quot;INTJ&quot;' />
+              <groupfilter function='member' level='[none:MBTI:nk]' member='&quot;INTP&quot;' />
+              <groupfilter function='member' level='[none:MBTI:nk]' member='&quot;ISFJ&quot;' />
+              <groupfilter function='member' level='[none:MBTI:nk]' member='&quot;ISTJ&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0cuwa1u0rdqeo011a6jxs1ums48v].[none:MBTI:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0cuwa1u0rdqeo011a6jxs1ums48v].[cnt:Calculation_1374301628299411456:qk]' palette='purple_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0cuwa1u0rdqeo011a6jxs1ums48v].[cnt:Calculation_1374301628299411456:qk]' value='Count'>
+              <formatted-text>
+                <run>Count</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.0cuwa1u0rdqeo011a6jxs1ums48v].[cnt:Calculation_1374301628299411456:qk]' />
+              <text column='[federated.0cuwa1u0rdqeo011a6jxs1ums48v].[cnt:Calculation_1374301628299411456:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0cuwa1u0rdqeo011a6jxs1ums48v].[none:cluster:nk]</rows>
+        <cols>[federated.0cuwa1u0rdqeo011a6jxs1ums48v].[none:MBTI:nk]</cols>
+      </table>
+      <simple-id uuid='{FBFCEC9D-CD46-4804-AD90-168B07808C7B}' />
+    </worksheet>
+  </worksheets>
+  <windows pres-mode='true' show-side-pane='false' source-height='30'>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0cuwa1u0rdqeo011a6jxs1ums48v].[cnt:Calculation_1374301628299411456:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0cuwa1u0rdqeo011a6jxs1ums48v].[cnt:Calculation_1374301628299411456:qk]</field>
+            <field>[federated.0cuwa1u0rdqeo011a6jxs1ums48v].[none:EI:nk]</field>
+            <field>[federated.0cuwa1u0rdqeo011a6jxs1ums48v].[none:cluster:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{5D1C7FD1-59B9-4474-AB46-7F3B99BF2DBB}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 2 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0cuwa1u0rdqeo011a6jxs1ums48v].[cnt:Calculation_1374301628299411456:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0cuwa1u0rdqeo011a6jxs1ums48v].[cnt:Calculation_1374301628299411456:qk]</field>
+            <field>[federated.0cuwa1u0rdqeo011a6jxs1ums48v].[none:EI:nk]</field>
+            <field>[federated.0cuwa1u0rdqeo011a6jxs1ums48v].[none:MBTI:nk]</field>
+            <field>[federated.0cuwa1u0rdqeo011a6jxs1ums48v].[none:cluster:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E289FA95-9948-4DF9-9267-4DDB831E4455}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='384' name='Sheet 2' width='384'>
+      iVBORw0KGgoAAAANSUhEUgAAAYAAAAGACAYAAACkx7W/AAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAa5ElEQVR4nO3deXBV9d3H8c+592bfCFk0C4SEJYIL7kuDFse1ih0rFakd7VOn7lWcwWqV
+      YZpSta0gYtWKFKVKrWvRTpVqUaBIiNkDJCSQGIghYlaykVySuzx/dEyLoqQUiPB9v2b4g5Pf
+      Ofd37rm573NObsAJBoNBAQDMcQ33BAAAw4MAAIBRBAAAjCIAAGAUAQAAowgAABhFAADAKM9w
+      TwAAMHSBQEA+n2/w7x6PR5//Opfb7f6vtkUAAOAoUl9fr7lz5youLk6SNHv2bFVUVCgsLEyX
+      XXbZf7UtAgAAR5H+/n6lp6dr3rx5kv51BZCXl6fw8PD/elsEAACOMnV1dVq6dKkk6frrrz/o
+      7RAAADjKjBw5Uuecc44kHdSZ/+cIAAAcZcLCwpScnCxJcrkO/sOcBAAAjiKxsbGKiYnRkiVL
+      JEk333yzMjMzFRIS8l9vy+GfgwYAm/hFMAAwigAAgFEEAACMIgAAYBQBAACjCAAAGEUAAMAo
+      AgAARhEAADCKAACAUQQAAIwiAABgFAEAAKMIAAAYRQAAwCgCAABGEQAAMIoAAIBRBMAor9cr
+      n8833NMAMIwIgCEffPCBurq6JEmLFy9WeXn5MM8IB9LR0aE77rhDR/K/7l61apV6enokSUuW
+      LNHatWuP2GMfq9atW6f29nZJ0ooVK/TGG28c1vWGyp2bm5t7SLeIQ6a9vV3vvPOOurq6lJaW
+      pu3bt6uurk4bNmxQSEiICgsL1dTUpPT0dJWWlqqurk6bN2/WqFGj5DiO8vLyVFxcrMjISPX2
+      9urxxx9XIBBQWFiYqqur5fF4VFlZqfDwcLW1tam3t1exsbGqrq6WJEVGRg7zM/DN19zcrOrq
+      ahUUFKi/v1/btm1TbW2tMjMzVVFRofXr18vr9er444/X9u3btXPnTuXl5clxHCUkJKikpET5
+      +fkKBAJKSkpSX1+f1qxZo4aGBvl8PiUlJSk1NVUpKSkqKirSzp07VVhYqIyMDLlcLpWUlKi8
+      vFy9vb1KSkqSy+VSMBhUaWmp8vLylJSUJMdxVFZWpk2bNumzzz5TR0eH8vPzlZ6ertDQUJWV
+      lemf//yn4uPjtXv3bi1cuFAul0uRkZEaM2aMRo0apfDwcG3YsEGFhYU67rjjFB4ersLCQjU0
+      NKi0tFQZGRkKBAJau3atqqqqlJSUpIiIiOE+PIeN3+9XQUGBampqVFtbq/7+fq1bt07JyckK
+      Dw9XcXGx1q9fr4SEBPX29uqJJ55QX1+fwsLClJWVpbS0NO3YsUORkZEKDQ1VUVGREhISVFhY
+      qIKCAoWFhWlgYGC/6w0MDGjr1q0qLS1VW1ub0tPTNTAwoDVr1qiurk4DAwNKTEyU9K8r/Xff
+      fVc1NTXKyMhQX1+fNm/erIqKCtXX13MF8E0VCAQ0d+5cRUZG6rXXXlNpaak++OADvfrqq2pq
+      atJ9992n7u5uPfbYY+ro6NDTTz+tmpoalZeXa+nSperu7lZtba08Ho/mzp2rPXv2yOfzyev1
+      amBgQJJUUFCgjo4OPfbYY2ppadHixYsVDAb12GOPHdEzzqPZli1b9NRTT8nr9eree+9VfX29
+      Vq9erb1796q0tFQxMTFasGCB6uvr9cEHH+j5559XT0+PHn30UQUCAZWWlioqKkoPP/ywWlpa
+      9NBDD6m6ulpbtmzR66+/rt7eXi1ZskR+v1/z58/Xxo0bVVBQoJUrV2rlypV66aWX1N/fr4UL
+      Fw7e0isvL9cLL7ygqKgoPfTQQ2pqatJvf/tbdXd3a/78+Vq3bp2Kioq0cuVKlZSUaOnSpYqJ
+      idH999+vzs5O+f3+wdfJP/7xD23ZskXvvvuu3n77bQUCAf3iF79QX1+fHnnkEVVVVWnt2rVa
+      vXq13nzzTeXl5cnn82n79u3DfGQOL5/Pp1/96ldqamrSsmXL9Oabb6qmpkZ//vOflZ+frxdf
+      fFERERGaM2eOenp6NDAwoL1796q/v1+FhYXKz89XcXGx1qxZo/b29sHXxbZt2w643tatW7Vg
+      wQL19PRo/vz56urq0oIFC1RWVqaGhgb98Y9/HJzn448/rk8++UR1dXV68skn1dTUpIcffljt
+      7e1avHgxAfim6ujoUGNjo3bs2CG3260tW7ZIki6//HJNmzZN2dnZmjFjhtLT09Xf36/IyEhd
+      ffXV+tGPfqS6ujqFhISora1tn7PD1NRUXXzxxTrxxBPlOI6uueYaXX311ZKkM888Uw0NDdq0
+      aZNiY2OVlJQ0nLt/VDn33HN1zTXXKDU1VTfccIMmTpyo/v5+OY6j/Px8+Xw+tba2SpKuuuoq
+      zZgxQ47jaGBgQIFAQIWFherr61Nzc7Oam5t1yy23aMqUKV96nPj4eN1www264IIL1NfXp+Li
+      Yt188836zne+s8/VWllZmVwul+rr69XS0qLu7m6NHTtWM2bMUFZWlmbMmKHzzz9ffX19Kikp
+      0fTp03XllVdqwoQJcrlcOv7443XJJZdowoQJg9ssKirSjTfeqGuvvVaO42j37t1KTEzUDTfc
+      oJycHPX19SkrK0s7d+5UTU2NUlJSDv8TP8ySk5M1c+ZMTZw4UVdffbUuvfRSeb1eFRUV6Qc/
+      +IGuuuoqpaSkKBgMKiMjQ1OnTtXkyZMH17/wwgu1fv16lZWV6bTTTlNkZKQ6OjpUXFwsr9er
+      uLi4/a4nSeedd56uu+46HXfccfL7/SovL9fs2bN14YUX7jOuqqpKN910k37yk5+ooqJCknTS
+      SSdp5syZys7OJgDfVJ9fGk6ZMkW33HKLcnJyvnZ8IBCQ1+tVRUWFEhIStHr1akVEROjOO+/U
+      iBEjJEkhISH69NNP1d/f/6X1Q0JCdMkll2jevHm64oorDss+WdLQ0KCioiLdc889+7yR/qeq
+      qipt375ds2bN0ujRoxUaGqpgMKj8/Hxt2rTpgI+RnJystWvXqry8XH19fYPLExISNGLECF15
+      5ZX62c9+9rW38pKSklRbWyuv16vGxkbFx8dLklpaWgavFCUpMTFRH3/8sTo6OtTX17ff2ztp
+      aWl65JFHlJKSopdffvmA8z9WJSUlqaamRr29vWppaVFMTIw8Hs+XvvdGjRqlvr4+vf3225o6
+      dao2bNggn8+nu+++e/AWzv7W25/4+Hi9//77X/q5XlRUlBobG/XJJ58oOjr6S+t5DsH+4jAI
+      Dw/XrbfeqmXLlik0NFTXXXedUlJSNGLECIWHhyszM1OSNG7cOIWEhMjr9eo3v/mNwsPDdddd
+      d8nv92vlypWD9wg9Ho+uuOIKLVu2TM3NzUpPTx98YY4bN06SdOmll+pPf/rTfs8+sX8jRoxQ
+      SkqKXC6XTjjhBEn/emNOSUlRZGSkHnnkEYWHhysmJmbw+LlcLmVnZyszM1O9vb2aP3++YmNj
+      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
+      FRkZqeLiYqWmpmrXrl2655571Nvbq8TERFVVVemmm25SZ2en/vKXv2jRokWaM2eOzjzzTBUU
+      FGjNmjW66aabdMYZZ8jr9R62HQUA7GtIt4AaGxv1rW99S8cff7xGjBjxleMmT56shIQE5ebm
+      avPmzYqPj1d4eLhSUlLU0tKi3bt363e/+51cLpd6enrkOI7uvfdenX322XIc55DtFADgwIZ0
+      BTBp0iS98cYbysnJUVpa2uByt9ut4uJi+f1++f1+NTQ0aMqUKTrvvPP02muv6fzzz9euXbtU
+      VFSktLQ0RUREaNq0adq9e7cSExMlSREREZKkHTt2qKGhQXv27FFBQYFOPvlkRUZGHoZdBgBI
+      kjs3Nzf3QIMmTZqk5uZm1dbW6sQTT1RcXJzGjRun0aNHq7y8XOnp6TrxxBOVlZWlDRs2qL6+
+      XjfeeKNSU1MVFxen8vJynXfeeZo0aZLy8vIUCAR0yimnKCoqSllZWQoLC1NVVZW2bdum7Oxs
+      tbS0aNy4cYNxAAAcek4wGAwO9yQAAEcevwgGAEYRAAAwigAAgFEEAACMIgAAYBQBAACjCAAA
+      GEUAAMAoAgAARhEAADCKAACAUQQAAIwiAABgFAEAAKMIAAAYRQAAwCgCAABGEQAAMIoAAIBR
+      BAAAjCIAAGAUAQAAowgAABhFAADAKAIAAEYRAAAwigAAgFEEAACMIgAAYBQBAACjCAAAGEUA
+      AMAoAgAARhEAADCKAACAUQQAAIwiAABgFAEAAKMIAAAYRQAAwCgCAABGEQAAMIoAAIBRBAAA
+      jCIAAGAUAQAAowgAABhFAADAKAIAAEYRAAAwigAAgFEEAACMIgAAYBQBAACjCAAAGEUAAMAo
+      AgAARhEAADCKAACAUQQAAIwiAABgFAEAAKMIAAAYRQAAwCgCAABGEQAAMIoAAIBRBAAAjCIA
+      AGAUAQAAowgAABhFAADAKAIAAEYRAAAwigAAgFEEAACMIgAAYBQBAACjCAAAGEUAAMAoAgAA
+      RhEAADCKAACAUQQAAIwiAABgFAEAAKMIAAAYRQAAwCgCAABGEQAAMIoAAIBRBAAAjCIAAGAU
+      AQAAowgAABhFAADAKAIAAEYRAAAwigAAgFEEAACMIgAAYBQBAACjCAAAGEUAAMAoAgAARhEA
+      ADDqoALQ19enYDB4qOcCADiCDioAc+bMUVtb2wHH9fT0aO3atUPaZnV1tWbPnq0bb7xRr776
+      KoEBgMPMM5RBgUBAJSUlam5u1gUXXKCBgQEFg0FVVVVp1KhRcrvdqqur08SJEwfHnXbaaaqs
+      rNTy5cslSeeee65aW1tVUFCgU089VVlZWaqsrFRqaqpqa2vV0dGh2267TYmJiZo1a5Yuv/xy
+      xcXFHdadBwDLhnQF8MYbb2jFihXyer1qbW0dXP7KK6+osbFRra2teuGFF1RaWqrnnntOgUBA
+      GzduVFdXl/r7+9Xa2qquri498MADiouL00MPPaS2tjYtW7ZMDz74oIqKinTRRRcpMzNT7733
+      nhISEhQVFXXYdhoAMMQrgIKCAs2aNUujR4/+2nHJyckaGBhQRUWFpk+frujoaOXl5en73/++
+      ysvL5fP5tGPHDjmOo+3btysYDGrmzJn69re/rb179+qXv/yloqOjNW/ePHk8Q5oaAOAgDekK
+      YOTIkaqpqdGePXvU19e3z9c6OzvV2tqqYDCoqKgo/frXv1ZOTo4WLVokl8ulrq4u7dmzRzEx
+      MfJ4PJo6daruueceZWZmynEcjR8/Xo7j6JVXXlF0dLRuv/12+f1+BQKBw7LDAIB/cefm5uYe
+      aNDYsWP18ssva9WqVRo/fryam5t1xhlnKBgMavny5WpsbFRKSoqSk5P19NNPa/Pmzbrssst0
+      yimnqLKyUm+99ZamTZum3t5evfPOO9q6datOP/107dq1S5MnT1ZUVJQ+/PBDbd++XevXr9dH
+      H32kM888UxEREUfgKQAAm5zgED9uEwwGFQgE5HK55DjO4LKBgQGFhIQMLvv87D0kJGRwjM/n
+      k8fjkeM48vl8crvdg+MBAMNjyAEAABxb+E1gADCKAACAUQQAAIwiAABgFAEAAKMIAAAYRQAA
+      wCgCAABGEQAAMIoAAIBRBAAAjCIAAGAUAQAAowgAABhFAADAKAIAAEYRAAAwigAAgFEEAACM
+      IgAAYBQBAACjCAAAGEUAAMAoAgAARhEAADCKAACAUQQAAIwiAABgFAEAAKMIAAAYRQAAwCgC
+      AABGEQAAMIoAAIBRBAAAjCIAAGAUAQAAowgAABhFAADAKAIAAEYRAAAwigAAgFEEAACMIgAA
+      YBQBAACjCAAAGEUAAMAoAgAARhEAADCKAACAUf8PcG5tR1naDBwAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='384' name='Sheet 2 (2)' width='384'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>

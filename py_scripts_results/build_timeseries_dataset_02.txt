@@ -1,0 +1,21 @@
+EEG dataset loaded.
+Shape: (19851, 6)
+
+MBTI dataset loaded.
+Shape: (24, 4)
+
+Datasets merged.
+Shape: (19851, 7)
+
+Behavioural metrics created.
+MBTI dimensions created.
+EI column added (empty placeholder).
+
+Final dataset saved to:
+processed_data/final/eeg_timeseries_full_02.csv
+
+Missing MBTI values: 8648
+Unique participants: 38
+
+--- PHASE 2 COMPLETE ---
+

@@ -1,0 +1,19 @@
+New dataset loaded.
+Shape: (19851, 14)
+
+Old dataset loaded.
+Shape: (658, 14)
+
+Datasets combined.
+Shape: (20509, 14)
+
+Duplicates removed.
+Final shape: (20509, 14)
+
+Final dataset saved to:
+processed_data/final/eeg_timeseries_final_03.csv
+
+Total participants: 42
+
+--- PHASE 3 COMPLETE ---
+
