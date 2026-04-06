@@ -2,93 +2,61 @@
 
 ## Overview
 
-This project investigates whether Myers–Briggs Type Indicator (MBTI) personality dimensions and Emotional Intelligence (EI) scores align with measurable neural engagement patterns during formal presentations.
+This project investigates whether MBTI personality dimensions and Emotional Intelligence (EI) 
+categories align with measurable neural engagement patterns during formal student presentations.
 
-Using electroencephalographic (EEG) bandpower data collected via the Muse 2 wearable headband, the study applies unsupervised clustering techniques to identify naturally occurring neural engagement patterns. These physiologically derived clusters are then statistically compared against MBTI personality dimensions and EI measures.
+EEG bandpower data was collected from 42 anonymised participants via the Muse 2 wearable headband. 
+Neural engagement (beta/alpha ratio) and cognitive workload (theta/alpha ratio) were derived from 
+raw signals, and unsupervised K-means clustering was applied to identify naturally occurring 
+engagement profiles. Clusters were then interpreted against MBTI dimensions and EI categories 
+using Tableau visualisations.
 
-The objective is to evaluate whether traditional psychometric classifications meaningfully correspond with observable neural engagement under evaluative conditions.
-
----
-
-## Research Questions
-
-1. Do neural engagement clusters align with MBTI personality dimensions?
-2. Are Emotional Intelligence (EI) scores significantly different across neural engagement groups?
-3. Do physiological engagement patterns vary independently of personality classifications?
-
----
-
-## Dataset Description
-
-The dataset consists of anonymised Open Sound Control (OSC) exports from Muse 2 wearable EEG devices.
-
-Each record includes:
-
-- Device timestamp
-- Participant identifier
-- Sensor type
-- EEG bandpower values:
-  - Delta
-  - Theta
-  - Alpha
-  - Beta
-  - Gamma
-
-EEG values represent relative bandpower estimates rather than raw microvolt signals.
-
-Separate datasets include:
-
-- MBTI personality dimension classifications  
-  (Introversion–Extraversion, Sensing–Intuition, Thinking–Feeling, Judging–Perceiving)
-- Emotional Intelligence (EI) scores
-
-All data used in this repository is anonymised and intended solely for academic research.
+The study found that personality dimensions align with neural engagement in terms of timing and 
+variability rather than overall magnitude, with Extraverts, Judging, and Thinking types showing 
+sharper engagement spikes at key presentation moments, while Introverts and Feeling types sustain 
+steadier patterns throughout.
 
 ---
 
-## Methodological Framework
+## Key Findings
 
-The project follows a structured analytical pipeline:
-
-1. Dataset structural audit and validation
-2. EEG data cleaning and preprocessing
-3. Participant-level feature extraction:
-   - Mean alpha bandpower
-   - Mean beta bandpower
-   - Beta-to-alpha ratio
-   - Engagement stability metrics
-4. Feature scaling and normalisation
-5. Unsupervised clustering (K-Means)
-6. Cluster validation using:
-   - Silhouette score
-   - Within-cluster sum of squares (WCSS)
-7. Statistical analysis:
-   - Chi-square tests for MBTI dimensions
-   - ANOVA for Emotional Intelligence (EI)
-8. Visual analytics development in Tableau
+- MBTI dimensions do not predict average neural engagement level, but do align with engagement 
+  timing and variability
+- Extraverts, Judgers, and Thinking types show sharper neural spikes at key presentation moments
+- Introverts and Feeling types engage more consistently, with lower peak volatility
+- 86% of participants fall into a single dominant neural engagement cluster
+- Higher EI is associated with more stable and regulated neural engagement throughout
 
 ---
 
-## Tools & Technologies
+## Dataset
 
-- Python (pandas, numpy, scikit-learn)
-- Tableau (visual analytics)
+Anonymised OSC exports from Muse 2 wearable EEG devices, containing timestamped bandpower 
+values (delta, theta, alpha, beta, gamma) per participant. MBTI and EI data were provided 
+separately and merged at participant level.
+
+All data is anonymised and used solely for academic research purposes.
+
+---
+
+## Tools and Technologies
+
+- Python (pandas, numpy) — data preprocessing and feature engineering
+- Weka — K-means clustering
+- Tableau — visual analytics (10 visualisations across 2 dashboards)
 - Muse 2 wearable EEG device
-- VS Code
 
 ---
 
 ## Academic Context
 
-BSc Information Technology and Business Information Systems  
-CST3395 – IT Solution Deployment Planning  
-Middlesex University  
-Academic Year 2025/2026  
-
+BSc Information Technology and Business Information Systems
+CST3395 – IT Solution Deployment Planning
+Middlesex University | 2025/2026
 Supervisor: George Dafoulas
 
 ---
 
 ## Author
 
-[Chioma Audrey Uche-Nwosu](https://www.chiomaaudrey.com) (me)
+[Chioma Audrey Uche-Nwosu](https://www.chiomaaudrey.com)
